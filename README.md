@@ -1,1 +1,2 @@
-# ENGG1340-Project
+Problem statement:
+Problem setting:

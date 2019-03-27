@@ -1,3 +1,1 @@
-Problem statement:
 
-Problem setting:

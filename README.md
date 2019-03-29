@@ -5,7 +5,7 @@ Contributors: Chow Chak Lam Leo (3035566613) and Ling Lok Tin (3035569055)
 ### Problem statement: 
 Expense and income can pretty much define a person's life as money is needed everywhere. Unfortunately, money is limited, so it is extremely crucial for us to manage our financial status. Yet, managing financial status is definitely not a easy task as we have lots of expenses everyday. This project aims to help people managing their financial status efficiently by building an accounting system.
 
-In the age of convience, when everything can be easily accessed, people tend to consumpt beyond their abilities because their purchase power is often over-estimated. The situation is especially common among adolescents in Hong Kong because of the lack of  financial status management skills. This project aims to help people manage their financial status efficiently, educates people to spend wisely, and promotes planning before spending. 
+In the age of convience, when everything can be easily accessed, people tend to consumpt beyond their abilities because their purchase power is often over-estimated. The situation is especially common among adolescents in Hong Kong because of the lack of financial status management skills. This project aims to help people manage their financial status efficiently, educates people to spend wisely, and promotes planning before spending. 
 
 ### Program Language:
 C++11

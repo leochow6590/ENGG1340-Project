@@ -29,3 +29,4 @@ financial advise (how to save money) (eg. spending on food is 58% more than othe
 
 ### Unique features:
 1. User have to set a password and enter the password everytime they access to the system.
+2. User will receive advices on spending money if the ratio of income to expense is too low. 

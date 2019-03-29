@@ -8,7 +8,7 @@ Expense and income can pretty much define a person's life as money is needed eve
 In the age of convience, when everything can be easily accessed, people tend to consumpt beyond their abilities because their purchase power is often over-estimated. The situation is especially common among adolescents in Hong Kong because of the lack of  financial status management skills. This project aims to help people manage their financial status efficiently, educates people to spend wisely, and promotes planning before spending. 
 
 ### Program Language:
-c++
+C++11
 ## Part 2: Program features
 
 

@@ -16,14 +16,16 @@ C++
 ## Part 2: Program Features
 
 ### Basic Features:
-1. User can add records of income and expenses.
-2. User can see the records which include the amount, date, types of income or expense and account(including cash, bank card and credit card.)
-3. User can delete or edit the records at any time.
-4. User will be provided with statistical report of user's financial state, including yearly/monthly/weekly income and expenses, percentage of money spent on different categories and the ratio of income to expense.
-5. User can search previous records by date or type of expense or account.
-6. User will receive an alert from the system if the monthly expenses exceed the budget setted in the system.
-7. Periodic income or expense can be included, the system will automatically take those factors into calculations.
+1. User can add, delete or edit records of income and expenses at anytime.
+2. User can view the records which include the amount, date, types of income or expense and account(including cash, bank card and credit card.)
+3. User will be provided with statistical report of user's financial state, including yearly/monthly/weekly income and expenses, percentage of money spent on different categories and the ratio of income to expense.
+4. User can search previous records by date or type of expense or account.
+5. User will receive an alert from the system if the monthly expenses exceed the budget setted in the system.
+6. Periodic income or expense can be included, the system will automatically take those factors into calculations.
 
 ### Unique Features:
 1. User have to set a password and enter the password everytime they access to the system.
 2. User will receive advices on spending money if the ratio of income to expense is too low. 
+3. Overall reports will be provided for user regularly, so that user can have a better understanding on his/her financial status.
+4. Suggestions on how to save money will be providen to user.
+5. User can cuntomize his/her own plan on spending money, compliment or alert will pop out based on the activities of spendings.

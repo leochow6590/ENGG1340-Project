@@ -13,6 +13,13 @@ c++
 
 
 ### Basic features:
+1. User can add records of income and expenses.
+2. User can see the records which include the amount, date, types of income or expense and account(including cash, bank card and credit card.)
+3. User can delete or edit the records at any time.
+4. User will be provided with statistical report of user's financial state, including yearly/monthly/weekly income and expenses, percentage of money spent on different categories and the ratio of income to expense.
+5. User can search previous record by date or type of expense or account.
+6. User will receive an alert from the system if the monthly expenses exceed the budget setted in the system.
+7. User have to set a password and enter the password everytime they access to the system.
 
 
 

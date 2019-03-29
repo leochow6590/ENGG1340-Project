@@ -19,6 +19,7 @@ C++11
 4. User will be provided with statistical report of user's financial state, including yearly/monthly/weekly income and expenses, percentage of money spent on different categories and the ratio of income to expense.
 5. User can search previous records by date or type of expense or account.
 6. User will receive an alert from the system if the monthly expenses exceed the budget setted in the system.
+7. Periodic expense or income can be included, the system will automatically take those factors into calculations.
 
 
 

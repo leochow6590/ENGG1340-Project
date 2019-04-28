@@ -44,10 +44,9 @@ int main(){
       case 5:
         setbudget();
         break;
-      //default:
     }
     cin>>choice;
   }
-  checkbudget();
+  checkbudget();  //This function will run every time when the user quit Financial Assistance to check whether the user's expense excceeds budget
   return 0;
 }

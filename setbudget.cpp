@@ -6,6 +6,14 @@
 #include"menu.h"
 using namespace std;
 
+//This file contains a function which allow user to set a monthly budget.//
+//When the user enter "5" in the main menu, this function will be executed.//
+//User can enter 1 to continue or enter 0 to return to menu.//
+//If user enter 1, user will be required to enter the month and year for the budget setting, the input should be in form of MM YYYY.//
+//Then user will be required to enter the amount of budget.//
+//The inputted information will be stored in budget.txt.//
+//The function returns to main function afterthat.//
+
 int setbudget(){
   ifstream fin;
   ofstream fout;

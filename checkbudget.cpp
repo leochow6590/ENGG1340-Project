@@ -9,7 +9,10 @@ using namespace std;
 //This file is a function that check weather the monthly expense exceeds the monthly budget.//
 //No input is required in this function.//
 //This function will automatically check everytime the system is started or quited.//
-//If the expense exceeds the budget, an alert will appear whnever the user signed in or quited.//
+//The function will read two input file, "record.txt" and "budget.txt".//
+//Then sorts the amount of expenses (stored in record.txt) with the corrrect date (MM YYYY), ie the budget period stored in budget.txt.//
+//Adding the amount of expenses in the budget period and compare it with the budget (stored in budget.txt).
+//If the expense exceeds the budget, an alert will appear whenever the user signed in or quited.//
 
 int checkbudget(){
   ifstream fin;

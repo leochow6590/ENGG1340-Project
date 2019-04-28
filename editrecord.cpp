@@ -24,14 +24,14 @@ int editrecord(){
   ofstream temp;
   int i=0,j,on=1;
   fin.open("record.txt");
-  if(fin.fail()){
+  if(fin.fail()){  //if "record.txt" does not exist, it means no record was added previously so nothing can be edited
     cout<<"No previous record."<<endl;
     menu();
     return 0;
   }
   cout<<setw(23)<<"Amount"<<setw(20)<<"Date"<<setw(20)<<"Type"<<setw(20)<<"Detail"<<setw(20)<<"Account"<<endl;
   cout<<endl;
-  while (getline(fin, amount1)){
+  while (getline(fin, amount1)){  //show all the records which were added previously
     i++;
     getline(fin, day1);
     getline(fin, month1);
@@ -47,22 +47,22 @@ int editrecord(){
     cout<<setw(20)<<account1<<endl;
   }
   cout<<endl;
-  cout<<"If you want to return to menu, enter 0."<<endl;
+  cout<<"If you want to return to menu, enter 0."<<endl;  //just in case the user misclick and come into this function
   cout<<endl;
   cout<<"Which record would you want to edit?"<<endl;
   cin>>j;
   cout<<endl;
   if (j==0){
-    menu();
+    menu();    //back to menu by entering "0"
     return 0;
   }
   else{
     while (j>i||j<1){
-      cout<<"Invalid input! Please enter once more."<<endl;
+      cout<<"Invalid input! Please enter once more."<<endl;  //re-input if there is no record with the chosen number
       cin>>j;
     }
   }
-  cout<<"Please enter the information of your record."<<endl;
+  cout<<"Please enter the information of your record."<<endl;  //update the information of the record
   cout<<"1. Income or 2. Expense (Enter the number.)"<<endl;
   cin>>type;
   while (on==1){
@@ -138,7 +138,7 @@ int editrecord(){
   }
   fin.close();
   fin.open("record.txt");
-  temp.open("temp.txt");
+  temp.open("temp.txt");  //the records which do not need to be edited are directly being output into "temp.txt", while the edited record will be outputed based on the information filled in during the run of this function
   for (int l=1;l<=i;l++){
     if (l!=j){
       getline(fin, amount1);
@@ -170,7 +170,7 @@ int editrecord(){
   temp.close();
   fin.close();
   remove("record.txt");
-  rename("temp.txt","record.txt");
+  rename("temp.txt","record.txt");  //turn "temp.txt" into "record.txt"
   cout<<endl;
   cout<<"***The record has been edited successfully! :D***"<<endl;
   cout<<endl;

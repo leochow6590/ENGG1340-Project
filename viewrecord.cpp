@@ -6,6 +6,15 @@
 #include"menu.h"
 using namespace std;
 
+//This file contains a function that can display previous financial record.//
+//When user chose "3" in the menu, this fuction will execute.//
+//This function will read "record.txt".//
+//Then sort the content by amount, date, type, detail and account.//
+//Then display all the record.//
+//If user wants to view the record by date, type, detail or account, they can input 1, 2, 3, 4 respectively.//
+//The function will sort the record accordingly.//
+//Otherwise, user can input "0" to return to main menu.//
+
 int viewrecord(){
   ifstream fin;
   ofstream fout;

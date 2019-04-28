@@ -6,6 +6,11 @@
 #include"menu.h"
 using namespace std;
 
+//This file is a function that check weather the monthly expense exceeds the monthly budget.//
+//No input is required in this function.//
+//This function will automatically check everytime the system is started or quited.//
+//If the expense exceeds the budget, an alert will appear whnever the user signed in or quited.//
+
 int checkbudget(){
   ifstream fin;
   ofstream fout;

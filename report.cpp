@@ -9,22 +9,25 @@ using namespace std;
 int report(){
   ifstream fin;
   ofstream fout;
-  double tic=0,tep=0,ratio,kindofic1[100],kindofep1[100]; //total income & total expense
+  double tic=0,tep=0,ratio,kindofic1[100],kindofep1[100];
+  //tic & tep mean total income & total expense
+  //the two arrays record how much was spent in/ earned from each items
   for (int z=0;z<100;z++){
     kindofic1[z]=0;
     kindofep1[z]=0;
-  }
+  }  //installing the arrays
   string bmonth, byear, amount, day, month, year, type, detail, account, kindofic[100],kindofep[100];
-  int choice,ic=0,ep=0;
+  //the two arrays are the names of each items of income/ expense
+  int choice,ic=0,ep=0;  //ic and ep are the number of items of income and expense
   fin.open("record.txt");
   if(fin.fail()){
     cout<<"No previous record!"<<endl;
     return 0;
-  }
+  }  //if "record.txt" does not exist, no report can be shown
   cout<<endl;
-  cout<<"If you want to return to menu, enter 0."<<endl;
+  cout<<"If you want to return to menu, enter 0."<<endl;  //in case user misclicked and came into this function
   cout<<endl;
-  cout<<"Please enter the month and year in the form of MM YYYY. (e.g. 12 2019)"<<endl;
+  cout<<"Please enter the month and year in the form of MM YYYY. (e.g. 12 2019)"<<endl;  //let the user fill in the month which the user want to have a report on
   cin>>bmonth;
   if (bmonth=="0"){
     fin.close();
@@ -45,7 +48,7 @@ int report(){
     else if(bmonth==month && byear==year && type=="Income"){
       tic+=stod(amount);
     }
-  }
+  }  //calculating the total expense and income of that specific month
   ratio=tep/tic;
   cout<<endl;
   cout<<"Here is your monthly financial report."<<endl;
@@ -59,7 +62,7 @@ int report(){
     diff=-diff;
   cout<<(ratio<1?"Looks like you are managing your financial status pretty well! You have saved ":"You have to pay more attention to your financial status because you have lost ");
   cout<<diff;
-  cout<<(ratio<1?" dollars this month! :D":" dollars this month :(")<<endl;
+  cout<<(ratio<1?" dollars this month! :D":" dollars this month :(")<<endl;  //Financial deficit and financial surplus result in different comments
   cout<<endl;
   cout<<"If you want to return to menu, enter 0."<<endl;
   cout<<"If you want to have a further understanding of your financial status, enter 1."<<endl;
@@ -87,22 +90,23 @@ int report(){
         kindofep[0]=detail;
         kindofep1[0]+=stod(amount);
         ep++;
-      }
+      }  //if the array is empty, the item will definitely be a new item
       else{
         for (int z=0;z<ep;z++){
           if (kindofep[z]==detail){
             kindofep1[z]+=stod(amount);
             break;
-          }
+          }  //to search whether the item currently exist in the array
           if(z==ep-1){
             kindofep[ep]=detail;
             kindofep1[ep]+=stod(amount);
             ep++;
             break;
-          }
+          }  //if the item does not exist in the array, a new item appear in the array
         }
       }
     }
+    //same with income below
     else if(bmonth==month && byear==year && type=="Income"){
       if (ic==0){
         kindofic[0]=detail;
@@ -128,7 +132,7 @@ int report(){
     cout<<endl;
     cout<<setw(15)<<"Kind of Expense"<<setw(15)<<"Percentage"<<setw(30)<<"Kind of Income"<<setw(15)<<"Percentage"<<endl;
     int big=ep;
-    string mostep=kindofep[0];
+    string mostep=kindofep[0];  //to find which item the user spend most money on
     double mostep1=kindofep1[0];
     if (ic>ep)
       big=ic;
